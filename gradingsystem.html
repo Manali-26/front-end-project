@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 10px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .result {
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Grading System</h2>
+        <input type="number" id="marks" placeholder="Enter marks" min="0" max="100">
+        <button onclick="calculateGrade()">Get Grade</button>
+        <p class="result" id="result"></p>
+    </div>
+
+    <script>
+        function calculateGrade() {
+            let percentage = document.getElementById('marks').value;
+            let result = document.getElementById('result');
+            let grade;
+
+            if (marks >= 90) {
+                grade = 'A+';
+            } else if (marks >= 80) {
+                grade = 'A';
+            } else if (marks >= 70) {
+                grade = 'B';
+            } else if (marks >= 60) {
+                grade = 'C';
+            } else if (marks >= 50) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
+
+            result.innerHTML = 'Grade: ' + grade;
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Pyramid</title>
+</head>
+<body>
+    <script>
+        function printPyramid(rows) {
+            let pyramid = '';
+            for (let i = 1; i <= rows; i++) {
+                let spaces = ' '.repeat(rows - i);
+                let stars = '*'.repeat(2 * i - 1);
+                pyramid += spaces + stars + '\n';
+            }
+            return pyramid;
+        }
+        
+        document.write('<pre>' + printPyramid(10) + '</pre>');
+    </script>
+</body>
+</html>
