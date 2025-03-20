@@ -41,10 +41,10 @@
 //  document.getElementById('demo').innerHTML=marks();
 
 
-function show(){
-    console.log('helo');
-    return 9
-    console.log();// looks very deam in color beacuse aftter return no code eill exicute
+// function show(){
+//     console.log('helo');
+//     return 9
+//     console.log();// looks very deam in color beacuse aftter return no code eill exicute
     
-}
-console.log(show());//does not return anything
+// }
+// console.log(show());//does not return anything
